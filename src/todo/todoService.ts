@@ -3,7 +3,6 @@ import { Todo } from "./todo";
 export type TodoCreationParams = Pick<Todo,"title" | "description">
 
 export class TodoService{
-    static get: any;
     public get (todoId:string): Todo {
         return {
             id: todoId,
